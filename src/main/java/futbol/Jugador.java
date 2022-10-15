@@ -27,6 +27,7 @@ public class Jugador extends Futbolista{
         return edad;
     }
 
+    @Override
     public String toString(){
         return "El futbolista" + getNombre() + " tiene" + getEdad() + ", y juega de" + getPosicion() +
                 " con la dorsal" + dorsal + ". Ha marcado" + golesMarcados;
