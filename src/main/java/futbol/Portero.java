@@ -9,7 +9,7 @@ public class Portero extends  Futbolista{
         this.golesRecibidos = golesRecibidos;
         this.dorsal = dorsal;
     }
-    
+
     @Override
     public boolean jugarConLasManos() {
         return true;
