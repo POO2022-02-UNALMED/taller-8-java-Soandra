@@ -1,6 +1,6 @@
 package futbol;
 
-public class Portero extends Futbolista{
+public class Portero extends  Futbolista{
     public short golesRecibidos;
     public byte dorsal;
 
@@ -9,35 +9,25 @@ public class Portero extends Futbolista{
         this.golesRecibidos = golesRecibidos;
         this.dorsal = dorsal;
     }
-
+    
     @Override
-    public boolean jugarConlasManos() {
+    public boolean jugarConLasManos() {
         return true;
     }
 
     @Override
     public int compareTo(Object o) {
-        return Math.abs(this.getGolesRecibidos() - ((Portero) o).getGolesRecibidos());
+        return Math.abs( this.getGolesRecibidos() - ((Portero) o).getGolesRecibidos() );
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return super.toString() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos;
     }
 
-    public short getGolesRecibidos() {
-        return golesRecibidos;
-    }
+    public short getGolesRecibidos() {return golesRecibidos;}
+    public void setGolesRecibidos(short golesRecibidos) {this.golesRecibidos = golesRecibidos;}
 
-    public void setGolesRecibidos(short golesRecibidos) {
-        this.golesRecibidos = golesRecibidos;
-    }
-
-    public byte getDorsal() {
-        return dorsal;
-    }
-
-    public void setDorsal(byte dorsal) {
-        this.dorsal = dorsal;
-    }
+    public byte getDorsal() {return dorsal;}
+    public void setDorsal(byte dorsal) {this.dorsal = dorsal;}
 }
